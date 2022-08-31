@@ -66,8 +66,8 @@
 
 # Задание 4 Проверить , образуют ли элементы массива арифметическую или геометрическую прогрессии. Проверить является ли данный массив убывающим или возрастающим
 
-# mass = [2,4,8,16]
-
+mass = [1,3,9,27]
+#
 # def type_progression(x):
 #     b = 0
 #     g = 0
@@ -78,7 +78,7 @@
 #         type_arifmetic_progression = 'убывающая'
 #     elif d == 0:
 #         type_arifmetic_progression = 'стационарная'
-    
+#
 #     if x[0] > 0 and f > 1:
 #         type_geometrical_progression = 'возрастающая'
 #     elif 0 < f < 1:
@@ -87,9 +87,9 @@
 #         type_geometrical_progression = 'знакочередующаяся'
 #     elif f == 1:
 #         type_geometrical_progression = 'стационарная'
-#     elif  x[0] < 0 and f > 1: 
-#         return 'Это не прогрессия'  
-
+#     elif  x[0] < 0 and f > 1:
+#         return 'Это не прогрессия'
+#
 #     for i in range(0,len(x)-1):
 #         if x[i+1]-x[i] == d:
 #             b += 1
@@ -97,12 +97,12 @@
 #                 return f'Арифметическая {type_arifmetic_progression} прогрессия со знаменателем {d}'
 #     for i in range(0,len(x)-1):
 #         if x[i+1]/x[i] == f:
-#             g += 1  
+#             g += 1
 #             if g == len(x)-1:
 #                 return f'Геометрическая {type_geometrical_progression} прогрессия со знаменателем {f}'
 #     return 'Это не прогрессия'
-
-            
+#
+#
 # print(type_progression(mass))
 
 # Задача 5 Найдите количество различных элементов данного массива
@@ -157,15 +157,39 @@
 # Задача 9 Из словаря вывести все числа на экран
 
 
-user = {
-    'k': 1,
-    2 : 2,
-    'name' : 3,
-    'login' : 4,
-    'parents' : {'mather':[5,{'k':6},'7',[{'a':8}]],'father':'9'},
-    'g':('10',{'p':11})}
+# user = {
+#     'k': 100,
+#     2 : 2,
+#     'name' : 34,
+#     'login' : 4,
+#     'parents' : {'mather':[5,{'k':6},'7',[{'a':8}]],'father':'9'},
+#     'g':('10',{'p':11})}
+#
+# key = []
+# value = []
+#
+#
+# for i in user.items():
+#     value.append(list(i))
+#
+#
+# def aa(x):
+#     for i in x:
+#         s = str(type(i))
+#         if 'int' in s or 'str' in s :
+#             key.append(str(i))
+#         elif 'dict' in s:
+#             for z in i.items():
+#                 aa(z)
+#         else:
+#             aa(i)
+#
+#
+# aa(value)
+# print(key)
+# for i in key:
+#     if i.isnumeric():
+#         print(i)
 
-var = '1234567891011121314'
-for i in list(user):
-    print(i)
-    
+
+
